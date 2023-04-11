@@ -111,3 +111,19 @@
   font-size: 12px;
   line-height: 18px;
 }
+
+.gallery {
+  max-width: 1184px;
+  margin: 0 auto 92px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 284px);
+  grid-gap: 16px;
+
+}
+
+.gallery__image {
+  width: 284px;
+  height: 213px;
+  object-fit: cover;
+  /* margin: 0 16px 0 16px; */
+}
