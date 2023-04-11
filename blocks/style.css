@@ -20,6 +20,8 @@
 
 .link {
   cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 
 .link:hover {
@@ -126,4 +128,76 @@
   height: 213px;
   object-fit: cover;
   /* margin: 0 16px 0 16px; */
+}
+
+.places {
+  list-style-type: none;
+  max-width: 984px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.place {
+  display: grid;
+  grid-template-areas:
+  "title url"
+  "image paragraph";
+  row-gap: 48px;
+  column-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 0 0 80px 0;
+  padding: 0;
+}
+
+.places__title {
+  grid-area: title;
+  margin: 0;
+  padding: 0;
+}
+
+.places__image {
+  width: 460px;
+  height: 460px;
+  grid-area: image;
+}
+
+.places__website {
+  grid-area: url;
+  align-self: end;
+}
+
+.places__url-heading {
+  font-size: 12px;
+  line-height: 12px;
+  color: #aaa;
+  /* grid-area: url; */
+}
+
+.places__link {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  /* grid-area: url; */
+}
+
+.places__text {
+  grid-area: paragraph;
+}
+
+.places__paragraph {
+  font-size: 18px;
+  line-height: 163%;
+  margin: 0 0 26px 0;
+  padding: 0;
+}
+
+.places__paragraph:last-child {
+  margin: 0;
+}
+
+.title {
+  font-family: 'InterBlack', Arial, sans-serif;
+  font-size: 72px;
+  line-height: 76px;
 }
