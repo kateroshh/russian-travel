@@ -1,6 +1,6 @@
 .header {
   max-width: 1184px;
-  margin: 0 auto;
+  margin: 0 auto 56px auto;
   display: flex;
   justify-content: space-between;
   padding-top: 28px;
@@ -90,6 +90,8 @@
   font-family: 'InterBlack', Arial, sans-serif;
   font-size: 54px;
   line-height: 58px;
+  padding: 0;
+  margin: 0 0 40px 0;
 }
 
 .intro__text {
@@ -97,6 +99,8 @@
   width: 100%;
   font-size: 16px;
   line-height: 163%;
+  padding: 0;
+  margin: 0 0 33px 0;
 }
 
 .intro__list {
@@ -118,14 +122,15 @@
   max-width: 1184px;
   margin: 0 auto 92px auto;
   display: grid;
-  grid-template-columns: repeat(4, 284px);
+  /* grid-template-columns: repeat(4, 284px); */
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   grid-gap: 16px;
-
 }
 
 .gallery__image {
-  width: 284px;
-  height: 213px;
+  min-width: 284px;
+  width: 100%;
+  /* height: 213px; */
   object-fit: cover;
   /* margin: 0 16px 0 16px; */
 }
@@ -210,8 +215,9 @@
   background-image: url(../images/cover-trains.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1184px;
-  height: 740px;
+  max-width: 1184px;
+  width: 100%;
+  max-height: 740px;
   margin: 0 auto 92px auto;
   display: flex;
   flex-direction: column;
@@ -273,4 +279,49 @@
   line-height: 16px;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 928px;
+    margin: 0 auto 48px auto;
+  }
+  .lead__subtitle {
+    margin: 0 auto 56px auto;
+  }
+  .lead__image {
+    width: 928px;
+    height: 580px;
+  }
+  .lead__caption {
+    max-width: 928px;
+  }
+  .intro {
+    max-width: 928px;
+  }
+  .gallery {
+      max-width: 928px;
+      grid-template-columns: repeat(3, 300px);
+      grid-gap: 14px;
+  }
+  .gallery__image {
+    /* width: 300px;
+    height: 225px; */
+    min-width: 300px;
+    width: 100%;
+  }
+  .places {
+      max-width: 928px;
+  }
+  .place__image {
+      width: 440px;
+      height: 440px;
+  }
+  .cover {
+    max-width: 1024px;
+    min-height: 640px;
+  }
+  .footer {
+    max-width: 928px;
+  }
 }
