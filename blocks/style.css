@@ -9,6 +9,12 @@
   box-sizing: border-box;
 }
 
+.header__logo {
+  max-width: 176px;
+  width: 100%;
+  max-height: 52px;
+}
+
 .header__lang-link {
   display: flex;
   align-items: flex-end;
@@ -219,7 +225,7 @@
   background-size: cover;
   max-width: 1184px;
   width: 100%;
-  max-height: 740px;
+  height: 740px;
   margin: 0 auto 92px auto;
   display: flex;
   flex-direction: column;
@@ -288,6 +294,7 @@
     max-width: 928px;
     margin: 0 auto 48px auto;
   }
+
   .lead__subtitle {
     margin: 0 auto 56px auto;
   }
@@ -326,7 +333,7 @@
   }
   .cover {
     max-width: 1024px;
-    min-height: 640px;
+    height: 640px;
   }
   .footer {
     max-width: 928px;
@@ -346,7 +353,7 @@
     max-height: 480px;
   }
   .lead__caption {
-    max-width: 768px;
+    max-width: 200px;
     margin-left: 24px;
   }
   .intro {
@@ -388,7 +395,7 @@
 
   .cover {
     max-width: 768px;
-    min-height: 440px;
+    height: 440px;
     margin: 0 auto 88px auto;
   }
 
@@ -403,11 +410,189 @@
   }
   .menu__link {
       margin: 0 18px 0 0;
-      font-size: 14px; /*Специально чтобы красиво смотрелось*/
+      font-size: 14px; /*Специально чтобы красиво смотрелось с моей ФИО*/
       line-height: 14px;
   }
 
   .footer_copyright {
-    font-size: 12px; /*Специально чтобы красиво смотрелось*/
+    font-size: 12px; /*Специально чтобы красиво смотрелось с моей ФИО*/
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .lead__title {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .lead__title {
+    font-size: 44px;
+    line-height: 74px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .place__link {
+    font-size: 14px;
+  }
+
+  .footer {
+    max-width: 288px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu__item {
+    margin-bottom: 32px;
+  }
+
+  .menu__link {
+      margin: 0 0 0 16px;
+      font-size: 24px;
+      line-height: 24px;
+  }
+
+  .footer_copyright {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 24px 16px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    max-width: 288px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 16px;
+  }
+
+  .header__logo {
+    max-width: 142px;
+    width: 100%;
+    max-height: 42px;
+  }
+
+  .header__lang-link {
+    padding-bottom: 6px;
+  }
+
+  .lead__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .lead__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto 40px auto;
+  }
+
+  .lead__image {
+    max-width: 320px;
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .lead__caption {
+    max-width: 150px;
+    margin-left: 24px;
+  }
+  .intro {
+    max-width: 288px;
+    margin: 0 auto 64px auto;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .gallery {
+    max-width: 288px;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    margin: 0 auto 64px auto;
+  }
+  .gallery__image {
+    min-width: 288px;
+    width: 100%;
+  }
+  .places {
+    max-width: 320px;
+    margin: 0 auto 66px auto;
+  }
+
+  .place {
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .place__title {
+    padding: 0 16px 32px 16px;
+  }
+
+  .place__image {
+    max-width: 320px;
+    width: 100%;
+    max-height: 320px;
+    margin-bottom: 32px;
+  }
+
+  .place__website {
+    align-self: flex-start;
+    padding: 0 16px 32px 16px;
+  }
+
+  .place__paragraph {
+    padding: 0 16px 0 16px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .cover {
+    max-width: 320px;
+    height: 200px;
+    margin: 0 auto 64px auto;
+  }
+
+  .cover__title {
+    margin: 16px;
+    max-width: 255px;
+    width: 100%;
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 260px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .header__lang-link_indent {
+    padding-right: 8px;
+  }
+  .lead__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .gallery__image {
+    min-width: 150px;
   }
 }
