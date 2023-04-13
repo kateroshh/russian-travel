@@ -19,3 +19,17 @@
     line-height: 74px;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .lead__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .lead__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}

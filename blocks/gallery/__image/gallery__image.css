@@ -17,3 +17,16 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .gallery__image {
+    min-width: 288px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .gallery__image {
+    min-width: 150px;
+  }
+}
