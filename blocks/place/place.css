@@ -1,0 +1,21 @@
+.place {
+  display: grid;
+  grid-template-areas:
+  "title url"
+  "image paragraph";
+  row-gap: 48px;
+  column-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 0 0 80px 0;
+  padding: 0;
+}
+
+.place:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    margin: 0 0 73px 0;
+  }
+}

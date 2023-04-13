@@ -1,0 +1,12 @@
+.title {
+  font-family: 'InterBlack', Arial, sans-serif;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
