@@ -1,5 +1,9 @@
-.link_indent {
+.header__link {
   padding-right: 18px;
+}
+
+.header__link:last-child {
+  padding-right: 0;
 }
 
 @media screen and (max-width: 290px) {

@@ -7,7 +7,7 @@
   column-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   margin: 0 0 80px 0;
-  padding: 0;
+  padding: 0 48px 0 48px;
 }
 
 .place:last-child {
@@ -17,14 +17,20 @@
 @media screen and (max-width: 768px) {
   .place {
     margin: 0 0 73px 0;
+    padding: 0 24px 0 24px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .place {
     margin: 0 0 50px 0;
-    display: flex;
-    flex-direction: column;
     row-gap: 0;
+    grid-template-areas:
+    "title"
+    "url"
+    "image"
+    "paragraph";
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 }

@@ -1,26 +1,26 @@
 .intro {
   margin: 0 auto 92px auto;
-  box-sizing: border-box;
   max-width: 984px;
   width: 100%;
+  padding: 0 48px 0 48px;
 }
 
 @media screen and (max-width: 1024px) {
   .intro {
-    max-width: 928px;
+    box-sizing: border-box;
   }
 }
 
 @media screen and (max-width: 768px) {
   .intro {
-    max-width: 720px;
     margin: 0 auto 88px auto;
+    padding: 0 24px 0 24px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .intro {
-    max-width: 288px;
     margin: 0 auto 64px auto;
+    padding: 0 16px 0 16px;
   }
 }
