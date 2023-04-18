@@ -2,7 +2,8 @@
   list-style-type: none;
   font-size: 12px;
   line-height: 18px;
-  font-family: 'InterBold', Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 }
