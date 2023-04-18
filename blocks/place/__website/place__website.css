@@ -3,7 +3,7 @@
   align-self: end;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 530px) {
   .place__website {
     align-self: flex-start;
     padding: 0 16px 28px 16px;

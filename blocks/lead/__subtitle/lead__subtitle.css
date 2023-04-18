@@ -25,6 +25,7 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0 auto 40px auto;
+    box-sizing: border-box;
   }
 }
 

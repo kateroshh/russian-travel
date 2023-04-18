@@ -7,25 +7,22 @@
 @media screen and (max-width: 1024px) {
   .gallery__image {
     min-width: 300px;
-    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .gallery__image {
     min-width: 352px;
-    width: 100%;
   }
 }
 
 @media screen and (max-width: 420px) {
   .gallery__image {
     min-width: 288px;
-    width: 100%;
   }
 }
 
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 300px) {
   .gallery__image {
     min-width: 150px;
   }
