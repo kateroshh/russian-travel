@@ -5,12 +5,6 @@
   padding: 0 48px 0 48px;
 }
 
-@media screen and (max-width: 1024px) {
-  .places {
-      /* max-width: 928px; */
-  }
-}
-
 @media screen and (max-width: 768px) {
   .places {
     margin: 0 auto 90px auto;
@@ -20,7 +14,6 @@
 
 @media screen and (max-width: 530px) {
   .places {
-    /* max-width: 320px; */
     margin-bottom: 65px;
     padding: 0;
   }
