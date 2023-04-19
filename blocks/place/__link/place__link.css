@@ -7,11 +7,5 @@
 }
 
 .place__link:hover {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 420px) {
-  .place__link {
-
-  }
+  opacity: 0.8;
 }
