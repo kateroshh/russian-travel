@@ -26,7 +26,7 @@
   background: rgba(42,44,47,0.3);
 }
 
-.cover__link:hover {
+.cover__link:hover:after {
   background-color: rgb(42,44,47);
   opacity: 0.8;
 }
